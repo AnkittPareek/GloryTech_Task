@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* ---------------------------------- Dashboard ---------------------------------- */
+.dashboard{
+    /* padding: 0 10px; */
+    background-color: #2A3F54;
+    min-height: 100%;
+    min-height: 100vh;
+    width: 220px;
+    text-align: center;
+}
+.organisation_name{
+    height: 30px;
+    color:#E0E0E0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+}
+.user_name{
+    color:#E0E0E0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.user_designation{
+    color:#E0E0E0;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+}
+.menu_sections{
+    font-family: Montserrat;
+    color: #929292;
+    font-weight: 700;
+    height: 18px;
+    width: 36px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.menu_input{display: none;}
+
+.menu_label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px 26px;
+    gap: 10px;
+    height: 32px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #E4E4E4;
+}
+#home:checked ~ #home_label{
+    background: #1C2936;
+}
+#jobs:checked  ~ #jobs_label{
+    background: #1C2936;
+}#roles:checked  ~ #roles_label{
+    background: #1C2936;
+}
+#users:checked  ~ #users_label{
+    background: #1C2936;
+}
+
+/* --------------------------------CONTENT LOGIC HERE------------------------------- */
+
+
+#home_page{
+    display: block;
+}
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 15%;
+}

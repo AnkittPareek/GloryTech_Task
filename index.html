@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>GloryTech_Task</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <!-- ------------DASHBOARD LOGIC HERE---------------- -->
+
+        <div class="dashboard">
+            <p class="organisation_name">Glory AutoTech</p>
+            <img class="profile_photo" src="./assets/images/Ankit.jpg" />
+            <p class="user_name">Ankit Pareek</p>
+            <p class="user_designation">React Developer</p>
+
+            <div class="menu">
+                <p class="menu_sections">Main</p>
+                <div class="main_menu">
+                    <input class="menu_input" type="radio" name="menu" id="home" >
+                    <label class="menu_label" id="home_label" for="home">HOME</label><br/>
+                    
+                    <input class="menu_input" type="radio" name="menu" id="jobs" >
+                    <label class="menu_label" id="jobs_label" for="jobs">JOBS</label>
+                </div>
+                <p class="menu_sections">Admin</p>
+                <div class="admin_menu">
+                    <input  class="menu_input" type="radio" name="menu" id="roles" >
+                    <label class="menu_label" id="roles_label" for="roles">ROLES</label><br/>
+                    
+                    <input class="menu_input" type="radio" name="menu" id="users" >
+                    <label class="menu_label" id="users_label"  for="users">USERS</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            
+            <div id="home_page">HOME PAGE</div>
+            <div id="jobs_page">JOB PAGE</div>
+            <div id="roles_page">ROLES PAGE</div>
+            <div id="users_page">USERS PAGE</div>
+            <div id="profile_page">PROFILE PAGE</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/index.js" ></script>
 </body>
 </html>
